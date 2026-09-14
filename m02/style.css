@@ -4,24 +4,58 @@
 /* Level 2 — TODO: tambahkan minimal satu selector ELEMEN (mis. p { ... }),
    satu selector CLASS (mis. .deskripsi { ... }), dan satu selector ID
    (mis. #judul-utama { ... }). Boleh style apa saja. */
+p{
+   text-align:justify;
+	vertical-align: middle;
+	margin-bottom: 16px;
+	line-height: 22px;
+}
+
+.deskripsi{
+   font-size: 1rem;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+#judul-utama{
+   padding-top:  25px; 
+	font-size: 2rem;
+   font-weight: bold;
+}
 
 /* Level 3 — TODO: lengkapi aturan .kotak di bawah supaya punya padding,
    border, DAN margin sekaligus (nilainya bebas, asal bukan nol). */
 .kotak {
-  background-color: #eef7ee;
+  background-color: var(--warna-bg);
+  padding : 10px;
+  border : 5px;
+  margin: auto;
 }
 
 /* Level 4 — TODO: tambahkan box-sizing: border-box. Biasanya ditulis untuk
    selector universal (*), supaya berlaku ke semua elemen sekaligus. */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
 
 /* Level 5 — TODO: tulis aturan untuk `.daftar > li` (anak LANGSUNG saja),
    misalnya list-style: square. Item yang bersarang dua level di dalamnya
    (class .jebakan) TIDAK BOLEH ikut ke-style oleh aturan ini — itu bedanya
    dengan `.daftar li` (turunan, level berapa pun). */
+.daftar > li {
+   list-style: square;
 
+}
 /* Level 6 — TODO: tambahkan aturan :hover DAN :focus-visible untuk
    .tombol, misalnya mengubah background-color supaya terlihat interaktif. */
-
+.tombol:hover, 
+.tombol:focus-visible {
+  background-color: #0056b3; 
+  outline: 3px solid #80bdff;
+}
 /* Level 7 — JANGAN UBAH aturan di bawah ini (p.pengumuman). Tugas kalian:
    kalahkan warnanya TANPA !important dan TANPA mengubah/menghapus baris
    di bawah — tambahkan aturan BARU dengan selector yang lebih spesifik
@@ -30,19 +64,41 @@ p.pengumuman {
   color: #999999;
 }
 
+#pengumuman-utama{
+   color: aqua;
+}
+
 /* Level 8 — TODO: font-size di bawah ini pakai px — ganti SEMUA font-size
    di seluruh file ini (termasuk yang kalian tambahkan sendiri di level
    lain) supaya pakai satuan rem, bukan px. */
-h1 {
-  font-size: 32px;
+* {
+  font-size: 2rem;
 }
+
+
 
 /* Level 9 — TODO: buat blok :root berisi minimal satu variabel CSS
    (custom property, contoh: --warna-aksen: #2c6e49;), lalu PAKAI variabel
    itu lewat var(--warna-aksen) di aturan lain pada file ini — bukan cuma
    dideklarasikan tanpa pernah dipakai. */
 
+
+:root {
+  --warna-aksen: #2c6e49;      
+  --warna-bg: #ffffff;         
+  --warna-teks: #333333;
+}
+
 /* Level 10 — TODO: tambahkan @media (prefers-color-scheme: dark) yang
    mengubah TEPAT TIGA variabel dari :root (Level 9) untuk membalik skema
    warna jadi gelap. Jangan menulis ulang seluruh selector lain — cukup
    ubah nilai variabelnya di dalam blok @media ini. */
+
+@media (prefers-color-scheme: dark){
+   :root{
+   --warna-aksen: #4caf50;     
+   --warna-bg: #121212;       
+   --warna-teks: #f5f5f5
+   }
+   
+}
