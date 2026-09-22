@@ -8,37 +8,37 @@ mahasiswa.
 
 ## Level 1–3 — Kartu flex
 
-- [ ] Tiga kartu koleksi unggulan berjajar ke SAMPING (bukan bertumpuk ke
+- [x] Tiga kartu koleksi unggulan berjajar ke SAMPING (bukan bertumpuk ke
       bawah)?
-- [ ] Ada jarak yang masuk akal di antara ketiganya (efek dari
+- [x] Ada jarak yang masuk akal di antara ketiganya (efek dari
       justify-content)?
-- [ ] Kartu kedua teksnya lebih panjang/tinggi — apakah ketiganya tetap
+- [x] Kartu kedua teksnya lebih panjang/tinggi — apakah ketiganya tetap
       terlihat rapi sejajar (bukan salah satu "mengambang" aneh)?
 
 ## Level 4 — Sidebar tetap, konten mengisi
 
-- [ ] Lebarkan/sempitkan jendela browser — sidebar tetap sama lebarnya
+- [x] Lebarkan/sempitkan jendela browser — sidebar tetap sama lebarnya
       (kira-kira 250px), sementara area konten yang melebar/menyempit?
 
 ## Level 5 — Sumbu berpindah
 
-- [ ] Tiga baris info kontak tersusun ke BAWAH (bukan ke samping)?
+- [x] Tiga baris info kontak tersusun ke BAWAH (bukan ke samping)?
 
 ## Level 6–9 — Grid koleksi
 
-- [ ] Di layar lebar (desktop), koleksi tersusun jadi beberapa kolom
+- [x] Di layar lebar (desktop), koleksi tersusun jadi beberapa kolom
       (bukan satu kolom memanjang ke bawah)?
-- [ ] Ada jarak yang konsisten antar kartu, tanpa jarak ganda yang aneh di
+- [x] Ada jarak yang konsisten antar kartu, tanpa jarak ganda yang aneh di
       salah satu sisi (indikasi ada margin yang seharusnya tidak ada)?
-- [ ] Kartu "Buku Unggulan Bulan Ini" terlihat lebih LEBAR dari kartu lain
+- [x] Kartu "Buku Unggulan Bulan Ini" terlihat lebih LEBAR dari kartu lain
       (memakan 2 kolom)?
 
 ## Level 10 — Responsif tanpa @media
 
-- [ ] Sempitkan jendela browser pelan-pelan (atau DevTools device
+- [x] Sempitkan jendela browser pelan-pelan (atau DevTools device
       toolbar) — apakah jumlah kolom grid berkurang otomatis mengikuti
       lebar, TANPA patahan yang aneh (kartu terpotong, tumpang tindih)?
-- [ ] Di 320px, apakah grid-nya jadi satu kolom yang rapi (bukan tetap
+- [x] Di 320px, apakah grid-nya jadi satu kolom yang rapi (bukan tetap
       memaksa banyak kolom yang jadi sempit sekali)?
 
 ---
